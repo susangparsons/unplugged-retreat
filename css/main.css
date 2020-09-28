@@ -87,6 +87,246 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background: black;
+}
+
+
+
+/***** BASE HEADER AND FOOTER STYLES *****/
+
+header, 
+footer {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+ /***** Base Header Styles  *****/
+
+ header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  background: darkgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  background: yellow;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/***** BASE CONTENT WRAPPER? *********/
+
+/*.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}*/
+
+ /***** Base Footer Styles  *****/
+
+/*.footer-content {
+  align-content: space-around; 
+}*/
+
+footer .social {
+  background: lightyellow;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  background: darkgray;
+
+
+}
+
+address {
+
+}
+
+footer .copyright {
+  background: lightpink;
+}
+
+/***** MOBILE HOMEPAGE STYLES  *****/
+
+/***** Header  Styles  *****/
+
+
+header .header-divider {
+
+}
+
+figure {
+
+}
+
+/***** Main Styles  **********************************/
+
+main {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+ }
+
+aside {
+  background: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+
+/*section {
+  background: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+/***** Hero Styles  *****/
+
+.hero-area {
+  background: purple;
+  display: flex;
+  justify-content: center;
+
+}
+
+ /***** Form  Styles  *****/
+
+ .form-description {
+
+}
+
+.form {
+  background: lime;
+}
+
+/***** Features Styles  *****/
+
+.features {
+
+
+ }
+
+ .features-items {
+
+
+ }
+
+ .features-item-description {
+
+ }
+
+ .fontawesome-icon {
+
+ }
+
+/***** Reviews  Styles  *****/
+
+ .reviews {
+
+ }
+
+/***** END Main Styles ****************************/
+
+
+/* other */
+
+
+.contact-section {
+
+}
+
+
+
+.text {
+
+}
+
+.button {
+
+}
+
+/***** MOBILE ABOUT PAGE STYLES  *****/
+
+ .mission {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+ }
+
+ .mission-content {
+
+ }
+
+ .about-contact {
+
+ }
+
+ .contact-section {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+/***** MOBILE FAQ  PAGE STYLES  *****/
+
+ .faq {
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+ }
+
+  .faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
