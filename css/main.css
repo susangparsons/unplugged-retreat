@@ -87,10 +87,70 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
 body {
-  background: black;
+  background: black; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+  line-height: 1.3em;
+}
+ 
+ul, 
+ol {
+ font-family: 'Open Sans', sans-serif;
+ list-style: none;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.15em;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.1em;
+}
+ 
+p {
+
+}
+ 
+img {
+ width: 100%;
+}
+
+img.scaled {
+
+}
+ 
+figure {
+ width: 30%;
+}
+ 
+address {
+ font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+}
+ 
+.content-wrapper {
+ 
+}
 
 
 /***** BASE HEADER AND FOOTER STYLES *****/
@@ -169,13 +229,17 @@ footer .content-wrapper {
 footer .social {
   background: lightyellow;
   padding: 0 15px;
-  width: 50%;
+  width: 60%;
+}
+
+footer .social h4 {
+  text-align: center;
 }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
-  width:50%;
+
 }
 
 footer .social-icons p {
@@ -185,9 +249,6 @@ footer .social-icons p {
   padding: 15px 0;
 }
 
-footer .social h4 {
-  width: 40%
-}
 
 footer .footer-content {
   display: flex;
@@ -200,7 +261,8 @@ footer .footer-content {
 footer .contact {
   background: darkgray;
   padding: 0 15px;
-  width: 50%;
+  text-align: center;
+  width: 60%;
 
 }
 
@@ -296,6 +358,7 @@ article {
  }
 
  .features article {
+  text-align: center;
   width: 63%;
   margin: 30px 0;
  }
@@ -315,7 +378,6 @@ article {
 }
 
  .reviews h3 {
-  width: 37%;
  }
 
 /***** END Main Styles ****************************/
@@ -368,7 +430,7 @@ article {
  .contact-content {
   background: darksalmon;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: row wrap;
   width: 100%;
  }
