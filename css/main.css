@@ -613,6 +613,7 @@ aside .content-wrapper {
 
  .faq .content-wrapper h2 {
   width:100%;
+  padding-left: 2em;
  }
 
 .faq-content {
@@ -627,14 +628,59 @@ aside .content-wrapper {
 
 /*Desktop styles here*/
 @media only screen and (min-width: 1200px) {
+
+/*.content-wrapper {
+  max-width: 960px;
+}*/ /* I may need to revisit this max-width for small devies and p's that are too long to read*/
+
+ 
  header nav {
   width: 40%;
   padding-left: 24em;
  }
 
+/* Hero */
+
+.hero-area h1 {
+    width: 
+}
+
+/* Aside which is form area*/
+
+aside .content-wrapper {
+        justify-content:
+}
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+        width:
+    }
+
+/* Features */
+
  .features article {
    flex-basis: 15em;
  }
+
+ .features h2 {
+    width: 
+    }
+
+
+/* Reviews */
+
+.reviews article div {
+        width: 
+    }
+
+
+/***** About page desktop *****/
+
+.mission h2,
+.contact-section .content-wrapper h2 {
+        width: 
+    }
+
+/**** FAQ page desktop *****/
 
  .faq-content {
     flex-basis: 30em;
