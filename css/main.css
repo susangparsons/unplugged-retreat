@@ -10,6 +10,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+* {
+  box-sizing: border-box;
+}
 
 html {
   color: #222;
@@ -95,15 +98,18 @@ html {
 }
  
 body {
-  background: black; 
+  background: black;
+  color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: .875em;
   line-height: 1.3em;
+  font-weight: 400;
 }
  
 ul, 
 ol {
  font-family: 'Open Sans', sans-serif;
+ font-weight: 400;
  list-style: none;
 }
  
@@ -114,16 +120,19 @@ a {
 
 h1 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   line-height: 1.15em;
 }
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   line-height: 1.2em;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   line-height: 1.1em;
 }
  
@@ -168,12 +177,12 @@ footer {
  /***** Base Header Styles  *****/
 
  header .content-wrapper {
-  background: antiquewhite;
+  background: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
+  width: 81%;
   margin: 0;
 }
 
@@ -184,15 +193,18 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 75%;
-  padding: 15px;
+  padding: 0 3px;
 }
 
 header nav ul {
-  background: yellow;
+  background: #202322;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125em;
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 15px 0;
+  padding: 3px 0;
   width: 100%;
 }
 
@@ -217,8 +229,8 @@ header nav ul li {
 }*/
 
 footer .content-wrapper {
-  background: aliceblue;
-  width: 80%;
+  background: #202322;
+  width: 82%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +239,7 @@ footer .content-wrapper {
 
 
 footer .social {
-  background: lightyellow;
+  background: #202322;
   padding: 0 15px;
   width: 60%;
 }
@@ -259,7 +271,10 @@ footer .footer-content {
 }
 
 footer .contact {
-  background: darkgray;
+  background: #202322;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   padding: 0 15px;
   text-align: center;
   width: 60%;
@@ -271,7 +286,10 @@ address {
 }
 
 footer .copyright {
-  background: lightpink;
+  background: #202322;
+  display: flex;
+  justify-content: center;
+  width:82%;
 }
 
 /***** MOBILE HOMEPAGE STYLES  *****/
@@ -280,10 +298,9 @@ footer .copyright {
 
 
 header .header-divider {
-  width: 80%;
+  width: 100%;
   height: 3%;
-  padding: 15px;
-
+  /* change to add color*/
 }
 
 figure {
@@ -298,15 +315,16 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-   padding: 5px;
+  padding: 0 5px;
  }
 
 aside {
-  background: silver;
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 10px;
   width:77%;
 
 }
@@ -320,9 +338,10 @@ article {
 /***** Hero Styles  *****/
 
 .hero-area {
-  background: purple;
+  background: #527158;
   display: flex;
   justify-content: center;
+  padding: 0 10px;
   width: 77%;
 
 }
@@ -330,18 +349,47 @@ article {
  /***** Form  Styles  *****/
 
  .form-description {
-  background: hotpink;
+  background: #527158;
 
 }
 
 .form {
-  background: lime;
+  background: #527158;
+}
+
+/*****  Form Styles - Input and Button Styles *****/
+  
+aside .form {
+  margin: 30px 0;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /***** Features Styles  *****/
 
 .features {
-  background: aquamarine;
+  background: #1a2c2a;
+  padding: 0 10px;
   width: 77%;
  }
 
@@ -373,7 +421,8 @@ article {
 /***** Reviews  Styles  *****/
 
 .reviews {
-    background: gold;
+    background: #2a423a;
+    padding: 0 10px;
     width: 77%;
 }
 
@@ -411,27 +460,30 @@ article {
  }
 
  .mission .content-wrapper{
-  background: darkturquoise;
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 10px;
   width: 100%;
  }
 
  .contact-section {
-  background: darkseagreen;
+  background: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 0 10px;
   width: 77%;
 }
 
  .contact-content {
-  background: darksalmon;
+  background: #2a423a;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  padding: 0 10px;
   width: 100%;
  }
 
@@ -448,11 +500,12 @@ article {
  }
 
   .faq .content-wrapper {
-  background: deepskyblue;
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 10px;
   width:77%;
 }
 
@@ -548,18 +601,15 @@ article {
 
  /*Tablet styles here*/
 @media only screen and (min-width: 768px) {
-header, 
-footer {
-  flex-flow: row wrap;
-}
 
-header content-wrapper {
+header .content-wrapper {
   justify-content: space-between;
+  padding: 0 30px 3px;
 }
 
 header nav {
-  justify-content: space-between;
-  width: 50%;
+  justify-content: flex-end;
+  width: 30%;
 }
 
 header .header-divider {
@@ -570,21 +620,41 @@ footer .footer-content {
   flex-flow: row nowrap;
 }
 
-/*footer .content-wrapper {
-  width: 80%
-  margin: 100px 0;
-}*/
-
 footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+footer .social {
+  flex-basis: 50%;
+}
+
+footer .contact {
+  flex-basis: 50%;
+}
+
+address {
+  flex-basis: 100%;
+}
+
+footer .copyright {
+  flex-basis: 100%;
+}
+
+/*footer .content-wrapper {
+  width: 80%
+  margin: 100px 0;
+}*/
+
+
+
 /* Home page tablet styles */
 
 .hero-area {
   width: 97%;
+  padding-left: 63px;
+  padding-right: 300px;
 }
 
 aside {
@@ -592,14 +662,34 @@ aside {
 }
 
 aside .content-wrapper {
-  margin: 50px 0;
+  margin: 15px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row nowrap;
 }
 
+aside .form {
+  margin: 0;
+  padding-right: 20px;
+  flex-basis: 80%;
+}
+
+aside .form-description {
+  padding: 0 60px;
+}
+
+.features {
+  width: 97%;
+  padding: 0 65px;
+}
+
+.features article {
+  flex-basis: 20em;
+  padding: 0 3em;
+}
 .reviews {
   width: 97%;
+  padding: 0 65px;
 }
 
 .reviews article {
@@ -607,14 +697,7 @@ aside .content-wrapper {
   justify-content: center;
 }
 
-.features {
-  width: 97%;
-}
 
-.features article {
-  flex-basis: 12.5em;
-  padding: 0 3em;
-}
 
 /*.features .content-wrapper {
   max-width: 95%;
@@ -634,12 +717,12 @@ aside .content-wrapper {
 }
 
 .mission-content h2 {
-  flex-basis: 100%;
+  flex-basis: 75%;
 }
 
 .mission-content p {
-  width: 12.5em;
-  padding: 0 3em;
+  width: 20em;
+  padding-left: 1em;
 
 }
 
@@ -650,6 +733,9 @@ aside .content-wrapper {
   width: 97%;
 }
 
+.contact-section h2 {
+  padding: 0 4em;
+}
 .content-wrapper {
  flex-basis:100%;
 }
@@ -675,12 +761,12 @@ aside .content-wrapper {
 
  .faq .content-wrapper h2 {
   width:100%;
-  padding-left: 2em;
+  padding: 0 4.1em;
  }
 
 .faq-content {
-  flex-basis: 12.5em;
-  padding: 0 3em;
+  flex-basis: 20em;
+  padding-left: 1em;
 }
 
 .faq-content h4, p {
@@ -694,55 +780,65 @@ aside .content-wrapper {
 /*.content-wrapper {
   max-width: 960px;
 }*/ /* I may need to revisit this max-width for small devies and p's that are too long to read*/
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
+header, 
+footer {
+  padding: 0 17px;
+}
  
  header nav {
-  width: 40%;
+  width: 60%;
   padding-left: 24em;
  }
 
+
+main {
+  margin: 0;
+  padding: 0;
+}
 /* Hero */
 
-.hero-area h1 {
-    width: 
-}
 
 /* Aside which is form area*/
 
-aside .content-wrapper {
-        justify-content:
+aside .form-description {
+ flex-basis: 50%;
 }
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-        width:
-    }
+
+aside .form {
+  flex-basis: 50%;
+  padding: 0 60px;
+}
 
 /* Features */
 
- .features article {
-   flex-basis: 15em;
- }
-
- .features h2 {
-    width: 
-    }
-
-
 /* Reviews */
-
-.reviews article div {
-        width: 
-    }
 
 
 /***** About page desktop *****/
 
-.mission h2,
-.contact-section .content-wrapper h2 {
-        width: 
-    }
+.mission h2 {
+   flex-basis: 90%; 
+   padding: 0 6em;
+}
+
+.mission-content p {
+  width: 25em;
+}
+
+.contact-section h2 {
+  padding: 0 7.6em;
+}
 
 /**** FAQ page desktop *****/
+ .faq .content-wrapper h2 {
+  width: 90%;
+  padding: 0 4.1em;
+ }
 
  .faq-content {
     flex-basis: 30em;
