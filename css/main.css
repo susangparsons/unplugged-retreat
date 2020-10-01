@@ -338,9 +338,11 @@ article {
 /***** Hero Styles  *****/
 
 .hero-area {
-  background: #527158;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #527158;
+  background-size: cover;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
   padding: 0 10px;
   width: 77%;
 
@@ -394,6 +396,8 @@ input[type=button] {
  }
 
  .features-items {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #527158;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-start;
