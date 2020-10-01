@@ -135,30 +135,19 @@ h4 {
   font-weight: 500;
   line-height: 1.1em;
 }
- 
-p {
 
+figure {
+  margin: 0;
 }
  
 img {
  width: 100%;
 }
-
-img.scaled {
-
-}
  
-figure {
- width: 30%;
-}
- 
+
 address {
  font-family: 'Open Sans', sans-serif;
   font-style: normal;
-}
- 
-.content-wrapper {
- 
 }
 
 
@@ -303,8 +292,12 @@ header .header-divider {
   /* change to add color*/
 }
 
-figure {
-
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 /***** Main Styles  **********************************/
@@ -343,7 +336,7 @@ article {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 0 10px;
+  padding: 0 0 158px 10px;
   width: 77%;
 
 }
@@ -390,18 +383,24 @@ input[type=button] {
 /***** Features Styles  *****/
 
 .features {
-  background: #1a2c2a;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #527158;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   padding: 0 10px;
   width: 77%;
  }
 
  .features-items {
-  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #527158;
-  background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row wrap;
+  flex-basis: 30%;
+  padding: 20px;
+
  }
 
 .features-items p {
@@ -428,6 +427,15 @@ input[type=button] {
     background: #2a423a;
     padding: 0 10px;
     width: 77%;
+}
+
+.reviews .content-wrapper figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
  .reviews h3 {
@@ -620,6 +628,14 @@ header .header-divider {
   display: none;
 }
 
+header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 footer .footer-content {
   flex-flow: row nowrap;
 }
@@ -657,8 +673,9 @@ footer .copyright {
 
 .hero-area {
   width: 97%;
-  padding-left: 63px;
-  padding-right: 300px;
+ /* padding-left: 63px;
+  padding-right: 300px;*/
+  padding: 0 300px 300px 63px;
 }
 
 aside {
@@ -687,10 +704,17 @@ aside .form-description {
   padding: 0 65px;
 }
 
-.features article {
-  flex-basis: 20em;
-  padding: 0 3em;
+.features-items {
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
+
+.features article {
+  flex-basis: 40%;
+  padding: 0 2em;
+}
+
 .reviews {
   width: 97%;
   padding: 0 65px;
@@ -699,8 +723,23 @@ aside .form-description {
 .reviews article {
   display:flex;
   justify-content: center;
+  flex-flow: row nowrap;
 }
 
+.reviews .content-wrapper figure {
+  width: 100%;
+  margin: 20px;
+}
+
+.reviews h3 {
+  width: 80%;
+  padding: 0 5px 0 100px;
+}
+
+.reviews p {
+  width: 80%;
+  padding: 0 5px 0 100px;
+}
 
 
 /*.features .content-wrapper {
@@ -773,9 +812,6 @@ aside .form-description {
   padding-left: 1em;
 }
 
-.faq-content h4, p {
-
-} 
 }
 
 /*Desktop styles here*/
@@ -799,6 +835,13 @@ footer {
   padding-left: 24em;
  }
 
+header figure {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 main {
   margin: 0;
@@ -806,8 +849,11 @@ main {
 }
 /* Hero */
 
+.hero-area {
+  padding: 0 300px 430px 63px;
+}
 
-/* Aside which is form area*/
+  /* Aside which is form area*/
 
 aside .form-description {
  flex-basis: 50%;
@@ -820,6 +866,11 @@ aside .form {
 
 /* Features */
 
+
+.features article {
+  flex-basis: 30%;
+  padding: 0 2em;
+}
 /* Reviews */
 
 
