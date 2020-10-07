@@ -96,8 +96,7 @@ html {
 }
  
 body {
-  /*background: #202322;*/
-  background: white;
+  background: #202322;
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -233,7 +232,7 @@ footer .social-icons p {
 }
 
 footer .social-icons i {
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 footer .footer-content {
@@ -299,7 +298,7 @@ aside {
 /***** Mobile Hero Styles  *****/
 
 .hero-area {
-  background: url('../img/hero.jpg') center no-repeat #527158;
+  background: url('../img/hero.jpg');
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -313,6 +312,7 @@ aside {
   font-family: 'Poppins', Helvetica, Arial, sans-serif; 
   font-weight: 500; 
   line-height: 1.2; 
+  margin: 0;
 }
 
  /***** Mobile Form  Styles  *****/
@@ -733,7 +733,11 @@ aside .form-description {
   width: 100%;
 }
 
- .content-wrapper .mission-content {
+.mission .content-wrapper {
+  padding: 25px 35px 30px 0;
+}
+
+.content-wrapper .mission-content {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -765,20 +769,19 @@ aside .form-description {
 }
 
 .contact-section h2 {
-  padding: 0 3.3em;
+  padding: 0 2.2em;
 }
+
 .content-wrapper {
  flex-basis:100%;
 }
 
 .contact-content .content-wrapper {
   width: 12.5em;
-  padding: 0 3em;
 }
 
-
 .contact-content {
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /***** Tablet FAQ Page Styles *****/
@@ -836,6 +839,11 @@ header nav {
   width: 25%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+  padding: 0 10px;
+}
+
 footer .social {
   flex-basis: 25%;
 }
@@ -844,11 +852,15 @@ footer .contact {
   flex-basis: 25%;
 }
 
+footer .contact h3, h4 {
+  font-size: 1.25em;
+}
+
 /***** Desktop Home Page Styles *****/
 
 .hero-area {
   margin: 0;
-  padding: 0 300px 300px 63px;
+  padding: 0 300px 100px 63px;
 }
 
 .hero-area h1 {
@@ -907,12 +919,13 @@ aside .form {
 /***** Desktop About Page Styles  *****/
 
 .mission h2 {
+  font-size: 3em;
   flex-basis: 90%; 
-  padding: 0 5em;
+  padding: 0 3.6em;
 }
 
 .mission-content p {
-  flex-basis: 25em;
+  flex-basis: 18em;
 }
 
 .map {
@@ -926,10 +939,17 @@ aside .form {
 }
 
 .contact-section h2 {
-  padding: 0 6.7em;
+  font-size: 3.2em;
+  padding: 0 3.6em;
 }
+
 .contact-section h4, p {
+  font-size: 1.25em;
   padding: 0 3em;
+}
+
+.contact-content {
+  justify-content: space-evenly;
 }
 
 /**** Desktop FAQ Page Styles  *****/
@@ -939,12 +959,12 @@ aside .form {
 }
 
  .faq .content-wrapper h2 {
+  font-size: 3em;
   width:100%;
-  padding-left: 3em;
+  padding-left: 1.7em;
  }
 
 .faq-content {
-  /*flex-basis: 20em;*/
   flex-basis: 45%;
 }
 
