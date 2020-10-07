@@ -89,14 +89,15 @@ textarea {
    ========================================================================== */
 
 
-/* General Styles */
+/************************************General Styles ***************************/
  
 html {
   font-size: 16px;
 }
  
 body {
-  background: #202322;
+  /*background: #202322;*/
+  background: white;
   color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -133,16 +134,14 @@ p {
   line-height: 1.285;
 }
 
-
 figure {
   margin: 0;
 }
  
 img {
- width: 100%;
+  width: 100%;
 }
  
-
 address {
   font-style: normal;
 }
@@ -151,8 +150,7 @@ address {
   width: 90%;
   margin: 50px 0;
 }
-
-/***** BASE HEADER AND FOOTER STYLES *****/
+/* General Header and Footer Styles */
 
 header, 
 footer {
@@ -162,8 +160,6 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
-
- /***** Base Header Styles  *****/
 
  header .content-wrapper {
   background: #202322;
@@ -201,7 +197,6 @@ header nav ul li {
   padding: 0 30px;
 }
 
-
 footer .content-wrapper {
   background: #202322;
   width: 100%;
@@ -210,7 +205,6 @@ footer .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
 }
-
 
 footer .social {
   background: #202322;
@@ -224,7 +218,6 @@ footer .social h4 {
 footer .social-icons {
   display: flex;
   justify-content: space-between;
-
 }
 
 footer .social-icons p {
@@ -242,7 +235,6 @@ footer .social-icons p {
 footer .social-icons i {
   font-size: 1.75em;
 }
-
 
 footer .footer-content {
   display: flex;
@@ -266,7 +258,6 @@ footer .contact h4 {
  margin-bottom: 0;
 }
 
-
 footer .copyright {
   background: #202322;
   display: flex;
@@ -274,9 +265,11 @@ footer .copyright {
   width: 100%;
 }
 
-/***** MOBILE HOMEPAGE STYLES  *****/
+/* ==========================================================================
+   Author's Mobile Styles
+   ========================================================================== */
 
-/***** Header  Styles  *****/
+/***** Mobile Header Styles *****/
 
 
 header .header-divider {
@@ -286,14 +279,14 @@ header .header-divider {
 }
 
 header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-/***** Main Styles  **********************************/
+/************************** Mobile Main Styles  *****************************/
 
 aside {
   background: #527158;
@@ -303,8 +296,7 @@ aside {
   flex-flow: row wrap;
 }
 
-
-/***** Hero Styles  *****/
+/***** Mobile Hero Styles  *****/
 
 .hero-area {
   background: url('../img/hero.jpg') center no-repeat #527158;
@@ -323,18 +315,17 @@ aside {
   line-height: 1.2; 
 }
 
- /***** Form  Styles  *****/
+ /***** Mobile Form  Styles  *****/
 
  .form-description {
   background: #527158;
-
 }
 
 .form {
   background: #527158;
 }
 
-/*****  Form Styles - Input and Button Styles *****/
+/*****  Mobile Form Styles - Input and Button Styles *****/
   
 aside .form {
   margin: 30px 0;
@@ -362,7 +353,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/***** Features Styles  *****/
+/***** Mobile Features Styles  *****/
 
 .features {
   background: url('../img/features.jpg');
@@ -372,7 +363,6 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /*width: 100%;*/
  }
 
  .features .features-items {
@@ -380,14 +370,10 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /*flex-basis: 30%;
-  padding: 20px;*/
-
  }
 
 .features-items p {
   margin: 0;
-
  }
 
  .features article {
@@ -401,7 +387,7 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
-/***** Reviews  Styles  *****/
+/***** Mobile Reviews  Styles  *****/
 
 .reviews {
   background-color: #2a423a;
@@ -420,12 +406,10 @@ input[type=button] {
   margin: 20px 0;
 }
 
+/*************************** END Main Styles ****************************/
 
 
-/***** END Main Styles ****************************/
-
-
-/***** MOBILE ABOUT PAGE STYLES  *****/
+/***** Mobile About Page Styles  *****/
 
  .mission {
   display: flex;
@@ -453,7 +437,6 @@ input[type=button] {
   margin: 0;
   padding: 0;
  }
-
 
 .map {
   width: 100%;
@@ -493,7 +476,7 @@ input[type=button] {
   width: 100%;
  }
 
-/***** MOBILE FAQ PAGE STYLES  *****/
+/***** Mobile FAQ Page Styles *****/
 
  .faq {
   display: flex;
@@ -600,13 +583,13 @@ input[type=button] {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
    ========================================================================== */
  
 
- /*Tablet styles here*/
+/* ==========================================================================
+   Author's Tablet Styles
+   ========================================================================== */
 
 @media only screen and (min-width: 768px) {
 
@@ -628,12 +611,12 @@ header .header-divider {
 }
 
 header figure {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-left: 35px;
+   width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-left: 35px;
 }
 
 footer .footer-content {
@@ -664,7 +647,7 @@ footer .copyright {
 }
 
 
-/* Home page tablet styles */
+/***** Tablet Home Page Styles *****/
 
 .hero-area {
   padding: 0 65px;
@@ -693,6 +676,8 @@ aside .form-description {
   padding: 0 60px 0 10px;
 }
 
+/* Features */
+
 .features {
   padding: 0 45px;
 }
@@ -711,6 +696,8 @@ aside .form-description {
   flex-basis: 30%;
   padding: 0 2em;
 }
+
+/* Reviews */
 
 .reviews {
   padding: 0 45px;
@@ -740,9 +727,7 @@ aside .form-description {
   margin: 0;
 }
 
-
-
-/* About page tablet styles */
+/***** Tablet About Page Styles *****/
 
 .mission {
   width: 100%;
@@ -796,20 +781,20 @@ aside .form-description {
   justify-content: space-around;
 }
 
-/* FAQ page tablet styles */
+/***** Tablet FAQ Page Styles *****/
 
 .faq {
   width: 100%;
 }
 
  .faq .content-wrapper {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+}
 
  .faq .content-wrapper h2 {
   width:100%;
   padding-left: 1em;
- }
+}
 
 .faq-content {
   flex-basis: 45%;
@@ -818,7 +803,9 @@ aside .form-description {
 
 } /* end tablet here*
 
-/*Desktop styles here*/
+/* ==========================================================================
+   Author's Desktop  Styles
+   ========================================================================== */
 @media only screen and (min-width: 1200px) {
 
 header, 
@@ -829,16 +816,15 @@ footer {
  header nav {
   width: 60%;
   padding-left: 24em;
- }
-
+}
 
 header figure {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-left: 70px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-left: 70px;
 }
 
 header .content-wrapper {
@@ -858,7 +844,7 @@ footer .contact {
   flex-basis: 25%;
 }
 
-/* Hero */
+/***** Desktop Home Page Styles *****/
 
 .hero-area {
   margin: 0;
@@ -871,21 +857,23 @@ footer .contact {
   padding: 0 100px;
 }
 
-  /* Aside which is form area*/
-
 aside {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 aside .content-wrapper {
   flex-basis: 80%;
 }
+
 aside .form-description {
  flex-basis: 50%;
 }
 
+aside .form-description h3 {
+ padding-left: 55px;
+}
 aside .form {
   flex-basis: 50%;
   padding: 0 60px;
@@ -893,9 +881,12 @@ aside .form {
 
 /* Features */
 
-
 .features article {
   padding: 0;
+}
+
+.features h2 {
+  padding-left: 85px;
 }
 
 /* Reviews */
@@ -911,11 +902,13 @@ aside .form {
 .reviews article p {
   padding-left: 3px;
 }
-/***** About page desktop *****/
+
+
+/***** Desktop About Page Styles  *****/
 
 .mission h2 {
-   flex-basis: 90%; 
-   padding: 0 5em;
+  flex-basis: 90%; 
+  padding: 0 5em;
 }
 
 .mission-content p {
@@ -933,17 +926,17 @@ aside .form {
 }
 
 .contact-section h2 {
-  padding: 0 7.3em;
+  padding: 0 6.7em;
 }
 .contact-section h4, p {
   padding: 0 3em;
 }
 
-/**** FAQ page desktop *****/
+/**** Desktop FAQ Page Styles  *****/
 
  .faq .content-wrapper {
-    justify-content: space-around;
-  }
+  justify-content: space-around;
+}
 
  .faq .content-wrapper h2 {
   width:100%;
@@ -958,7 +951,7 @@ aside .form {
 .faq-content h4, p {
   padding: 0 55px;
 }
-} /*end 1200*/
+} /*end Desktop */
 
 
 /* ==========================================================================
